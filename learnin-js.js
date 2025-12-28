@@ -127,6 +127,7 @@ switch(gradee){
         console.log("invalid grade");
         break;
 }
+console.log("Testing the Terminal");
     
 
 
