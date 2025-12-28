@@ -92,4 +92,42 @@ for (let num = 0; num <= 11; num++) {
     console.log("Number: ", num);
 }
 //switch statement
+let number = 7;
+switch (number % 2) {
+    case 0:
+        console.log(number + " is an even number.");
+        break;
+    case 1:
+        console.log(number + " is an odd number.");
+        break;
+    default:
+        console.log("Invalid input. Please enter a valid number.");
+}
+
+let gradee="A";
+switch(gradee){
+    case "A":
+        console.log("Excellent work");
+        break;
+    case "B": 
+        console.log("awesome job");
+        break;
+    case "C":
+        console.log("keep it up");
+        break;
+    case "D":
+        console.log("you can do better");
+        break;
+    case "E":
+        console.log("study harder");
+        break;
+    case "F":
+        console.log("failed, try again");
+    default:
+        console.log("invalid grade");
+        break;
+}
+    
+
+
 
