@@ -15,3 +15,14 @@ if(num%2===0){
 else{
     console.log(num,"is an odd number");
 }}
+
+// Geminis assignment on arrays 
+// grade calculator
+let grades = [80, 90, 70, 100, 60];
+let total=0;
+
+for(let i=0;i<grades.length;i++){
+    total+=grades[i];
+    i===grades.length-1 ?console.log("Your average grade is",total/grades.length):null;
+
+}
