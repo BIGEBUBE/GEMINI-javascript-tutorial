@@ -195,6 +195,22 @@ console.log("Testing the Terminal");
     player.level=10;
     console.log("Player Level:", player.level);
 
+    function findStudent(students, name) {
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].name === name) {
+      return { student: students[i], index: i };
+    }
+  }
+  return null;
+}
+
+const students = [
+  { name: "Alice", grade: 95 },
+  { name: "Bob", grade: 87 },
+  { name: "Charlie", grade: 92 }
+];
+
+console.log(findStudent(students, "Bob"));
     
 
 
