@@ -188,6 +188,14 @@ console.log("Testing the Terminal");
     console.log("Player Lives:", player.lives);
     console.log("Player Has Super Power:", player.hasSuperPower);
     console.log("Player Inventory:", player.imvemtory);
+    // we can also modify object properties
+    player.lives=5;
+    console.log("Updated Player Lives:", player.lives);
+    // we can a;so add new properties to an object
+    player.level=10;
+    console.log("Player Level:", player.level);
+
+    
 
 
  
