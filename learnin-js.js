@@ -128,7 +128,66 @@ switch(gradee){
         break;
 }
 console.log("Testing the Terminal");
-    
+    // arrays in javascript
+    // we have string arrays and number arrays
+    let nameee=["ade", "victor", "oluebube","nwokolo"];//strong array
+    let agee=[4,5,1,2,1,2,3,8,9];//numbers array
+    // arrays can also be mixed
+    let mixed=["hello",12,"car",true];
+    // so we access the items in the array
+    console.log(nameee);
+    console.log(agee);
+    // we can modify ites in the array
+    nameee[2]="ebuka";
+    console.log(nameee[2]);
+    // arrray modifiers
+    nameee.push("qwertyui");// add a value to the end
+    console.log(nameee[nameee.length-1]);// you should notice how i accesed the last value without manually putting a number
+    nameee.pop();// remmoves the last value
+    nameee.unshift("yemi");// adds a value to the begining
+    console.log(nameee[0]);
+    nameee.shift();// this removes the first element
+    console.log(nameee[0]);
+    console.log(nameee);
+    // splice array modifier
+    nameee.splice(1,0,"james");// Starts at index one removes zero items at James at index one while shifting other values
+    console.log(nameee);
+    nameee.splice(3,1,"yuo","pot");// Starts as index 3 Remove one item while adding two items
+    // removing items using splice
+    nameee.splice(2,5);//
+    console.log(nameee);
+    nameee.reverse();// reverses the array
+    console.log(nameee);
+    nameee.splice(3,1,"yuo","pot");
+    console.log(nameee);
+    // Using the sort modifier
+    nameee.sort();// sorts in ascending order alphabetically
+    console.log(nameee);
+    //so to use d sort modifier 
+    //for number it different because it sorts numbers as strings
+    //so we use a compare function
+    console.log(agee);
+    agee.sort((a,b)=>a-b);// sorts in ascending order
+    // For the sending order just revers a in place of B and B in place of A
+    console.log(agee);
+    agee.sort((a,b)=>b-a);
+    console.log(agee);
+
+    //objects in javascript
+    let player={
+        name: "nwokolo victor oluebubechukwu",
+        lives: 3,
+        hasSuperPower: true,
+
+        //you can store arrrays in objects
+        imvemtory: ["sword", "shield", "potion"],
+    };
+    // accessing object properties
+    console.log("Player Object:", player);
+    console.log("Player Name:", player.name);
+    console.log("Player Lives:", player.lives);
+    console.log("Player Has Super Power:", player.hasSuperPower);
+    console.log("Player Inventory:", player.imvemtory);
 
 
-
+ 
