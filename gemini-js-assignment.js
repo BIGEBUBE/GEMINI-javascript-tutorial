@@ -26,3 +26,30 @@ for(let i=0;i<grades.length;i++){
     i===grades.length-1 ?console.log("Your average grade is",total/grades.length):null;
 
 }
+/*📝 Your Final Beginner Assignment
+This is a real-world task. You are going to build a simple User Profile system in code.
+Instructions:
+Create an Object called user with name, balance, and isActive (boolean).
+Write a Function called buyItem that takes price as an input.
+Inside the function:
+IF the user isActive is false, print "Account locked."
+ELSE IF the price is greater than user.balance, print "Insufficient funds."
+ELSE, subtract the price from the balance and print "Purchase successful! New Balance: " + user.balance.*/
+
+let user={
+    name:"Nwokolo Victor Oluebubechukwu",
+    balance:1000,
+    isActive:true,
+    buyItem(price){
+
+        if(!user.isActive){
+            console.log("Account locked.");
+        }
+        else if(price>user.balance){
+            console.log("Insufficient funds.");
+        }
+        else{console.log("this is your balance:",user.balance-=price)};
+    }
+    
+};
+console.log(user.buyItem(500));
