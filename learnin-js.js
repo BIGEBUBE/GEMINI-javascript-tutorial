@@ -203,7 +203,6 @@ console.log("Testing the Terminal");
   }
   return null;
 }
-
 const students = [
   { name: "Alice", grade: 95 },
   { name: "Bob", grade: 87 },
@@ -212,6 +211,36 @@ const students = [
 
 console.log(findStudent(students, "Bob"));
     
+//ES6+
+// arrow functions
+// using the old way
+function add(a, b) {
+    return a + b;
+}
+// when using arrow
+const addd=(a,b)=> a+b;
+// template literals
+let namme ="nwokolo victor oluebubechukwu";
+console.log(`hello ${namme}.how are you doing`);
 
-
- 
+//destructuring
+// the old way 
+let user = { id: 1, namne: "Alice", email: "alice@gmail.com",
+    id: 2, namne: "Ace", email: "ace@gmail.com"
+ };
+//let namne = user.namne;
+//let email = user.email;
+//console.log(name, email);
+ // using the modern way (destructuring)
+const {namne,email}=user;
+console.log(namne,email);
+// so the above code is a bad syntax you noticed how there are two ids in the object 
+// and how the output returned only one namne and email 
+//this because javascript object does not allow for re using the same keywords like id and email 
+//so it either we use an array of objects or we use an an object of arrays
+// i will rewrite the above code to print both of the included users
+const usser=[
+    {id:1, nammee:"akice", aggee:12},
+    {id:2, nammee:"ace", aggee:2}
+];
+console.log(usser);
