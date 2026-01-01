@@ -53,3 +53,21 @@ let user={
     
 };
 console.log(user.buyItem(500));
+
+//assignment on ES6+ transform an old code to ES5+ style 
+// below is d code
+let product = {
+    title: "iPhone 15",
+    price: 999,
+    color: "Black"
+};
+/* i will comment the old way so i can run d new code
+function getProductInfo(item) {
+    let title = item.title;
+    let price = item.price;
+    return "The " + title + " costs $" + price;
+}
+console.log(getProductInfo(product));*/
+// below is the transormed code
+const {title,price,color}=product;
+console.log(product);
