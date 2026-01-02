@@ -244,3 +244,24 @@ const usser=[
     {id:2, nammee:"ace", aggee:2}
 ];
 console.log(usser);
+//i also notced that here was array destructuring
+// Old way
+const numbers = [1, 2, 3];
+const firrst = numbers[0];
+const seccond = numbers[1];
+//ES^ way
+const [first,second,third]=[1,2,3];
+console.log(first);
+console.log(second);
+console.log(third);
+//skippin elements
+const[k, ,l]=[1,2,3];
+console.log( );// i trued printing the vasl 2 even though iskipped it 
+// rest operator
+const[head, ...tail]=[1,3,4,5,6]
+console.log(head);
+console.log(tail);
+//default values 
+const[j=3,u=4]=[484849,839];
+console.log(j);// u will notice that the output of j is 484849
+console.log(u);
