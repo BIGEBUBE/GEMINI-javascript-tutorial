@@ -71,3 +71,16 @@ console.log(getProductInfo(product));*/
 // below is the transormed code
 const {title,price,color}=product;
 console.log(product);
+
+// ASSSIGNMENT ON USNG ASYNC I WILL ALSO BE USING ERROR HANDLERS
+const gettodo=async () => {
+    try{
+        console.log("fetching data")
+        const response= await fetch("https://jsonplaceholder.typicode.com/todos/1");
+        const vallue= await response.json();
+        console.log("success");
+        console.log(vallue.title);
+    }
+    catch(error){console.log("eeeerrrooorr!!!!!!!",error.message);}
+}
+gettodo();
