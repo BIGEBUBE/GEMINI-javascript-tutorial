@@ -262,6 +262,24 @@ const[head, ...tail]=[1,3,4,5,6]
 console.log(head);
 console.log(tail);
 //default values 
-const[j=3,u=4]=[484849,839];
+const[j=3,u=4]=[484849];
 console.log(j);// u will notice that the output of j is 484849
-console.log(u);
+console.log(u);// if i did  [484489,484] output of u will be 484
+
+//asynchronous javascript
+// we are going to mark the function as async
+const getuserdata=async()=>{
+console.log("starting download");
+
+// now we have to await the fetch request this is what get us d data
+const response=await fetch("https://jsonplaceholder.typicode.com/users/1");
+ 
+// now we convert the response into a json(a readable format)
+const data=await response.json();
+console.log("download finished");
+console.log(data.name);
+}
+// to prove that the data runs in the background while continueing the res of the code
+// we are going to get the data and also run a program
+getuserdata();
+console.log("now you see that i printed before the data arrived ");
